@@ -5,6 +5,11 @@ import {Provider} from 'react-redux';
 import {store} from './store';
 
 import Header from './components/layout/Header';
+import Home from './pages/Home.jsx';
+import Products from './pages/Products.jsx'
+import Cart from './pages/Cart.jsx'
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx';
 
 function App() {
   return (
