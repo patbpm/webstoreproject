@@ -5,13 +5,13 @@ import {Provider} from 'react-redux';
 import {store} from './store';
 
 import Header from './components/layout/Header';
-import Home from './pages/Home.jsx';
-import Products from './pages/Products.jsx'
-import Cart from './pages/Cart.jsx'
+import Home from './pages/Home';
+import Products from './pages/Products'
+import Cart from './pages/Cart'
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 
-function App() {
+const App = ()=> {
   return (
     <Provider store = {store}>
       <Router>
@@ -21,8 +21,8 @@ function App() {
               <Route path='/' element ={<Home />} />
               <Route path='/products' element ={<Products />} />
               <Route path='/cart' element ={<Cart />} />
-              <Route path='/login' element ={<Login />} />
-              <Route path='/register' element ={<Register />} />
+              <Route path='/login' element ={<Login />} /> 
+             <Route path='/register' element ={<Register />}/> 
           </Routes>
 
         </div>
